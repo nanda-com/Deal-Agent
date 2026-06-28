@@ -1,0 +1,36 @@
+{
+  "name": "omniflow-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cascadeflow/core": "^1.1.0",
+    "@google/generative-ai": "^0.21.0",
+    "@types/multer": "^2.1.0",
+    "axios": "^1.16.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "firebase-admin": "^14.1.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.3",
+    "twilio": "^5.4.0",
+    "uuid": "^11.1.1"
+  },
+  "overrides": {
+    "uuid": "$uuid"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
